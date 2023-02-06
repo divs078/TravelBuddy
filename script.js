@@ -1,0 +1,1 @@
+var destinations = ["Airport", "Athens", "Augusta", "Columbus", "Macon", "Savannah"];

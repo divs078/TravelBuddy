@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="new-trip.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class=navigation-bar>
+    <img src="logo final.png" class="logo" alt="logo" onclick="window.location='index.html'" />
+    <a href="new-trip.html">New Trip</a>
+    <a href="trip-history.html">Trip History</a>
+    <a href="profile.html">Profile</a>
+  </div>
+
+
+  <body>
+
+    <center><div class="dropdown">
+      <button class="dropbtn" onclick="showDropList()">Choose Destination</button>
+      <div id="myDropdown" class="dropdownList">
+        <input type="text" placeholder="Search..." class="searchField">
+        <button id="Airport" onclick="change()">Airport</button>
+        <button id="Savannah" onclick="change()">Savannah</button>
+        <button id="Athens" onclick="change()">Athens</button>
+        <button id="Macon" onclick="change()">Macon</button>
+        <button id="Augusta" onclick="change()">Augusta</button>
+        <button id="Columbus" onclick="change()">Columbus</button>
+      </div>
+    </div></center>
+    <script>
+      function showDropList() {
+        let dropDiv = document.querySelector('.dropdownList');
+        if (dropDiv.style.display === "block") {
+          dropDiv.style.display = "";
+        } else {
+          dropDiv.style.display = "block";
+        }
+      }
+      document.querySelector('.searchField').addEventListener('keyup', filterDropdown);
+      function filterDropdown() {
+        var inputSearch, filterText, ul, li, links, i, div;
+        inputSearch = document.querySelector(".searchField");
+        filterText = inputSearch.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        links = div.getElementsByTagName("a");
+        for (i = 0; i < links.length; i++) {
+          txtValue = links[i].textContent || links[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filterText) > -1) {
+            links[i].style.display = "";
+          } else {
+            links[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+
+
+
+  <!--
+  <button type = "Airport">Airport</button>
+  <button type = "Athens">Athens</button>
+  <button type = "Savannah">Savannah</button>
+  <button type = "Macon">Macon</button>
+  <button type = "Augusta">Augusta</button>
+  <button type = "Columbus">Columbus</button>
+  -->
+  <h3>Travel Type</h3>
+
+  <div class="mot">
+
+    <button id="marta" onclick="change1()">Marta</button>
+    <button id="uber-lyft" onclick="change1()">Uber/Lyft</button>
+    <button id="ride-share" onclick="change1()">Ride Share</button>
+  </div>
+
+  <h3>Date</h3>
+  <center><input id='datebut' class="datebut" type="date"></center>
+  <h3>Time Range</h3>
+  <center><div><inline>From:</inline>
+  <input id='from' class="ft" type="time">
+  <inline>To:</inline>
+  <input id='to' class="ft" type="time"></div></center>
+
+
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

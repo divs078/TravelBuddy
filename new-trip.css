@@ -1,0 +1,188 @@
+
+
+
+body {
+  background-image: url("road.jpg");
+}
+
+
+
+
+.navigation-bar {
+  text-align:left;
+  /*background-color:#FF731D;*/
+  padding: 15px 0px;
+  font-family:"Lucida Console", "Courier New", monospace;
+}
+
+
+.logo{
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+.navigation-bar a {
+  color:white;
+  font-size:16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding:15px 20px;
+  text-align: center;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+.navigation-bar a:hover {
+  background-color:transparent;
+  border:2px solid white;
+  color:white;
+}
+
+
+/*also mot*/
+button {
+    background-color: transparent;
+    border:2px solid white;
+    padding: 5px 7px;
+    width: 160px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    left: 50%;
+    font-family:Anton;
+    margin-right: 50px;
+}
+
+span + span {
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: white;
+    border:2px solid white;
+    color: black;
+}
+button:focus{
+    background-color: white;
+    border-color:black;
+    color: black;
+}
+
+
+
+
+button {
+  text-align:center;
+}
+
+
+/* Your Travel History */
+h4 {
+  margin:10px 0px 50px;
+  font-size:25px;
+}
+/* Travel Type, Date, Time Range */
+h3 {
+  margin: 5px;
+  color:white;
+  text-align: center;
+  
+}
+
+input {
+  text-align:center;
+}
+
+inline{
+  display: inline-block;
+  margin: auto;  
+}
+
+.dropbtn { 
+    width: 130px;
+    margin: 10px 0px 30px;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+
+   }
+   .dropbtn:hover, .dropbtn:focus {
+      background-color: white;
+     text-align: center;
+   }
+   .searchField {
+      box-sizing: border-box;
+      font-size: 16px;
+      padding: 14px 20px 12px 45px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+     text-align: center;
+   }
+   .searchField:focus {outline: 3px solid #ddd;}
+   .dropdown {
+      position: relative;
+      display: inline-block;
+     text-align: center;
+   }
+   .dropdownList {
+     border-radius: 25px;
+      display: none;
+      position: absolute;
+      background-color: #f6f6f6;
+      min-width: 230px;
+      overflow: auto;
+      border: 1px solid #ddd;
+      z-index: 1;
+     color: black;
+     text-align: center;
+   }
+   .dropdownList a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+       text-align: center;
+   }
+   .dropdown a:hover {background-color: #ddd;}
+   .show {display: block;}
+
+/* method of transport - marta, uber, lyft buttons */
+.mot{
+    text-align: center;
+    margin: 0px 10px 30px
+
+    /*margin-left: 90px; */
+    width`: 160px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* date button */
+
+
+/* time 1 in range */
+/* date input button */
+#datebut{
+  text-align: center;
+  align-content: center;
+
+}
+
+#datebut{
+  text-align: center;
+  align-content: center;
+
+}
